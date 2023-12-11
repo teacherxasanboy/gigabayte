@@ -1,0 +1,28 @@
+input {
+    appearance: none;
+    width: 89px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 20px;
+    position: relative;
+}
+input::before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    transition: all 0.5s;
+}
+input:checked {
+    background-color: aqua;
+    transition: all 0.5s;
+
+}
+input:checked::before {
+    left: 54px;
+    transition: all 0.5s;
+}
